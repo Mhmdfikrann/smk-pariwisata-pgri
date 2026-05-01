@@ -15,9 +15,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { faqs, ppdb } from "@/lib/site-data";
 
 export const metadata: Metadata = {
-  title: "PPDB",
+  title: "PPDB SMK Terbaik di Majalengka",
   description:
-    "Informasi PPDB SMK Pariwisata PGRI Majalengka, jadwal, syarat, alur pendaftaran, form minat, dan FAQ.",
+    "Informasi PPDB SMK Pariwisata PGRI Majalengka, pilihan SMK terbaik di Majalengka untuk jurusan pariwisata, perhotelan, dan hospitality.",
 };
 
 export default function PpdbPage() {
@@ -26,7 +26,7 @@ export default function PpdbPage() {
       <PageHeader
         eyebrow="PPDB"
         title={`Pendaftaran siswa baru ${ppdb.year}`}
-        description="Halaman konversi utama untuk calon siswa dan orang tua: informasi jadwal, syarat, alur, form minat, FAQ, dan WhatsApp admin."
+        description="Daftar dan konsultasikan pilihan jurusan di SMK Pariwisata PGRI Majalengka, sekolah kejuruan pariwisata dan perhotelan di Majalengka."
       />
       <section className="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 lg:grid-cols-[0.85fr_1.15fr] lg:px-8">
         <div className="space-y-5">

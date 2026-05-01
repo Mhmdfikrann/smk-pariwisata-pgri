@@ -49,12 +49,12 @@ export default function Home() {
               PPDB {new Date().getFullYear()}
             </Badge>
             <h1 className="mt-5 max-w-4xl text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
-              Bangun Masa Depan di Dunia Pariwisata & Perhotelan
+              SMK Terbaik di Majalengka untuk Pariwisata & Perhotelan
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-7 text-white/82 sm:text-lg">
               {school.publicName} membekali siswa dengan keterampilan,
               karakter, dan pengalaman praktik untuk siap kerja, kuliah, maupun
-              berwirausaha.
+              berwirausaha di bidang hospitality.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <CtaLink href="/ppdb" size="lg" className="h-11 px-5">
@@ -93,7 +93,7 @@ export default function Home() {
           <div>
             <SectionHeading
               eyebrow="Profil Singkat"
-              title="Sekolah kejuruan dengan fokus hospitality di Majalengka"
+              title="Pilihan SMK terbaik di Majalengka dengan fokus hospitality"
               description={profileSections.about}
             />
             <div className="mt-6 flex flex-wrap gap-2">
@@ -249,7 +249,7 @@ export default function Home() {
               Siap bertanya atau mendaftar?
             </h2>
             <p className="mt-2 max-w-2xl text-sm leading-6 text-primary-foreground/80">
-              Isi form minat PPDB atau hubungi admin untuk konsultasi jurusan,
+              Isi form minat PPDB atau hubungi sekolah untuk konsultasi jurusan,
               jadwal, persyaratan, dan proses daftar ulang.
             </p>
           </div>
@@ -264,7 +264,7 @@ export default function Home() {
                 "h-10 border-white/35 bg-transparent px-4 text-white hover:bg-white/12 hover:text-white"
               )}
             >
-              WhatsApp Admin
+              WhatsApp Sekolah
             </a>
           </div>
         </div>

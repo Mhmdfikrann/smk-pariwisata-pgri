@@ -23,7 +23,7 @@ export default function KontakPage() {
       <PageHeader
         eyebrow="Kontak & Lokasi"
         title="Hubungi sekolah dan temukan lokasi dengan mudah"
-        description="Halaman kontak memudahkan calon siswa dan orang tua datang ke sekolah atau bertanya langsung ke admin PPDB."
+        description="Calon siswa dan orang tua dapat menghubungi sekolah, bertanya PPDB, atau datang langsung ke lokasi SMK Pariwisata PGRI Majalengka."
       />
       <section className="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
         <div className="space-y-5">
@@ -41,7 +41,7 @@ export default function KontakPage() {
               href={whatsappUrl(defaultWhatsappMessage)}
               className="inline-flex h-10 items-center justify-center rounded-lg bg-primary px-4 text-sm font-semibold text-primary-foreground hover:bg-primary/90"
             >
-              Hubungi Admin PPDB
+              Hubungi Sekolah
             </a>
             <CtaLink href={school.mapsUrl} variant="outline" target="_blank">
               Lihat Lokasi Sekolah

@@ -31,7 +31,7 @@ export default function FasilitasPage() {
         <SectionHeading
           eyebrow="Lingkungan Sekolah"
           title="Ruang yang mendukung pembelajaran vokasi"
-          description="Konten fasilitas bisa diganti dengan foto asli sekolah saat aset resmi tersedia."
+          description="Fasilitas sekolah mendukung pembelajaran teori, praktik hospitality, pembinaan karakter, dan kegiatan siswa."
         />
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {facilities.map((facility) => (

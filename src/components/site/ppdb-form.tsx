@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { major } from "@/lib/site-data";
+import { major, school, whatsappUrl } from "@/lib/site-data";
 
 type FormState = "idle" | "submitting" | "success" | "error";
 
@@ -17,38 +17,45 @@ export function PpdbForm() {
 
   const defaultMajor = useMemo(() => major.name, []);
 
-  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setState("submitting");
     setMessage("");
 
     const form = event.currentTarget;
     const formData = new FormData(form);
-    const payload = Object.fromEntries(formData.entries());
+    const payload = Object.fromEntries(formData.entries()) as Record<string, string>;
 
-    const response = await fetch("/api/ppdb", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
-    });
-
-    const result = (await response.json()) as {
-      ok: boolean;
-      whatsappUrl?: string;
-      error?: string;
-    };
-
-    if (!response.ok || !result.ok) {
+    if (
+      !payload.studentName?.trim() ||
+      !payload.originSchool?.trim() ||
+      !payload.parentName?.trim() ||
+      !payload.whatsappNumber?.trim() ||
+      !payload.interestedMajor?.trim()
+    ) {
       setState("error");
-      setMessage(result.error ?? "Data belum bisa dikirim. Coba lagi.");
+      setMessage("Mohon lengkapi semua field wajib.");
       return;
     }
 
+    const whatsappMessage = [
+      `Halo ${school.publicName}, saya ingin bertanya tentang PPDB.`,
+      "",
+      `Nama calon siswa: ${payload.studentName.trim()}`,
+      `Asal sekolah: ${payload.originSchool.trim()}`,
+      `Nama orang tua/wali: ${payload.parentName.trim()}`,
+      `Nomor WhatsApp: ${payload.whatsappNumber.trim()}`,
+      `Jurusan diminati: ${payload.interestedMajor.trim()}`,
+      payload.message?.trim() ? `Catatan: ${payload.message.trim()}` : "",
+    ]
+      .filter(Boolean)
+      .join("\n");
+
     setState("success");
-    setMessage("Data tersimpan. Anda akan diarahkan ke WhatsApp admin.");
+    setMessage("Pesan PPDB siap dikirim melalui WhatsApp.");
     form.reset();
     window.setTimeout(() => {
-      if (result.whatsappUrl) window.location.href = result.whatsappUrl;
+      window.location.href = whatsappUrl(whatsappMessage);
     }, 700);
   }
 

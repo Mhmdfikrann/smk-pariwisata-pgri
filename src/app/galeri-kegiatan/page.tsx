@@ -21,14 +21,14 @@ export default function GaleriKegiatanPage() {
       <PageHeader
         eyebrow="Galeri & Kegiatan"
         title="Dokumentasi kegiatan sekolah dalam satu halaman"
-        description="Galeri dirancang ringkas dengan filter kategori visual, grid foto, dan area video yang bisa diisi link YouTube atau Instagram."
+        description="Lihat dokumentasi kegiatan belajar, praktik jurusan, dan event sekolah yang menunjukkan suasana SMK Pariwisata PGRI Majalengka."
       />
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <SectionHeading
             eyebrow="Kategori"
             title="Kegiatan belajar, praktik, dan event"
-            description="Saat fitur admin final tersedia, kategori ini bisa menjadi filter dinamis untuk galeri."
+            description="Dokumentasi ini membantu calon siswa mengenal pengalaman belajar di sekolah pariwisata dan perhotelan di Majalengka."
           />
           <div className="flex flex-wrap gap-2">
             {categories.map((category) => (
@@ -66,7 +66,7 @@ export default function GaleriKegiatanPage() {
             </CardHeader>
             <CardContent>
               <div className="flex aspect-video items-center justify-center rounded-lg border bg-background text-center text-sm text-muted-foreground">
-                Area embed YouTube atau Instagram kegiatan sekolah.
+                Dokumentasi video kegiatan sekolah, praktik jurusan, dan aktivitas siswa.
               </div>
             </CardContent>
           </Card>

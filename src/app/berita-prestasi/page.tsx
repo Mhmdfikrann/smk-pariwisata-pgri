@@ -25,13 +25,13 @@ export default function BeritaPrestasiPage() {
       <PageHeader
         eyebrow="Berita & Prestasi"
         title="Informasi sekolah dan bukti kredibilitas"
-        description="Halaman ini menggabungkan berita dan prestasi agar struktur website tetap ringkas, aktif, dan SEO-friendly."
+        description="Kabar sekolah, kegiatan siswa, dan prestasi menjadi bukti komitmen SMK Pariwisata PGRI Majalengka sebagai pilihan SMK terbaik di Majalengka."
       />
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Artikel"
           title="Kabar terbaru sekolah"
-          description="Artikel dapat dikembangkan menjadi halaman detail dengan slug SEO-friendly saat CMS/admin panel final digunakan."
+          description="Ikuti informasi PPDB, kegiatan praktik, prestasi siswa, dan aktivitas sekolah yang membantu orang tua menilai kualitas pendidikan."
         />
         <div className="mt-8 grid gap-6 lg:grid-cols-3">
           {posts.map((post) => (
@@ -57,8 +57,8 @@ export default function BeritaPrestasiPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm leading-6 text-muted-foreground">
-                  Kategori: {post.category}. Meta description dan related posts
-                  disiapkan untuk kebutuhan SEO artikel.
+                  Kategori: {post.category}. Informasi ini membantu calon siswa
+                  mengenal suasana belajar, praktik, dan prestasi sekolah.
                 </p>
               </CardContent>
             </Card>

@@ -1,24 +1,15 @@
 import type { LucideIcon } from "lucide-react";
 import {
   Award,
-  BedDouble,
   BookOpen,
   BriefcaseBusiness,
-  Building2,
-  CalendarCheck,
   Camera,
   ChefHat,
-  GraduationCap,
-  Handshake,
   Hotel,
   MapPin,
   Megaphone,
-  Phone,
   School,
   Sparkles,
-  Star,
-  Users,
-  Utensils,
 } from "lucide-react";
 
 export const siteUrl = "https://smkpariwisatapgri-majalengka.sch.id";
@@ -48,7 +39,6 @@ export const navItems = [
   { label: "Beranda", href: "/" },
   { label: "Profil Sekolah", href: "/profil-sekolah" },
   { label: "Jurusan", href: "/jurusan" },
-  { label: "PPDB", href: "/ppdb" },
   { label: "Fasilitas", href: "/fasilitas" },
   { label: "Galeri & Kegiatan", href: "/galeri-kegiatan" },
   { label: "Berita & Prestasi", href: "/berita-prestasi" },
@@ -82,13 +72,13 @@ export function whatsappUrl(message: string) {
 }
 
 export const defaultWhatsappMessage =
-  "Halo Admin SMK Pariwisata PGRI Majalengka, saya ingin bertanya tentang PPDB.";
+  "Halo SMK Pariwisata PGRI Majalengka, saya ingin bertanya tentang PPDB.";
 
 export const stats = [
-  { value: "A", label: "Akreditasi data publik" },
+  { value: "A", label: "Akreditasi sekolah" },
   { value: "20247188", label: "NPSN sekolah" },
-  { value: "8", label: "Halaman informasi utama" },
-  { value: "1", label: "Fokus keahlian hospitality" },
+  { value: "Majalengka", label: "Lokasi strategis sekolah" },
+  { value: "Hospitality", label: "Fokus keahlian utama" },
 ];
 
 export const advantages: Array<{
@@ -103,28 +93,28 @@ export const advantages: Array<{
     icon: BriefcaseBusiness,
   },
   {
-    title: "Lingkungan ramah siswa",
+    title: "Pilihan SMK terbaik di Majalengka",
     description:
-      "Informasi sekolah disusun jelas agar siswa dan orang tua mudah memahami pilihan pendidikan.",
-    icon: Users,
+      "Sekolah menyiapkan lingkungan belajar yang disiplin, ramah, dan relevan untuk calon siswa yang mencari SMK terbaik di Majalengka.",
+    icon: Award,
   },
   {
-    title: "Fokus PPDB",
+    title: "PPDB mudah dikonsultasikan",
     description:
-      "Calon siswa bisa bertanya, mengisi form minat, dan langsung terhubung dengan admin PPDB.",
+      "Calon siswa dan orang tua bisa bertanya langsung melalui WhatsApp tentang jurusan, jadwal, syarat, dan proses pendaftaran.",
     icon: Megaphone,
   },
   {
-    title: "SEO lokal",
+    title: "Dekat dengan kebutuhan daerah",
     description:
-      "Konten ditata untuk kata kunci SMK Pariwisata, SMK Perhotelan, dan PPDB SMK di Majalengka.",
+      "Pembelajaran diarahkan pada peluang kerja, layanan, pariwisata, perhotelan, dan wirausaha yang berkembang di Majalengka.",
     icon: MapPin,
   },
 ];
 
 export const profileSections = {
   about:
-    "SMK Pariwisata PGRI Majalengka adalah sekolah menengah kejuruan swasta yang menonjolkan pembelajaran bidang pariwisata dan perhotelan. Website ini menggunakan branding publik SMK Pariwisata PGRI Majalengka, dengan nama resmi pendidikan SMKS PGRI Majalengka.",
+    "SMK Pariwisata PGRI Majalengka adalah sekolah menengah kejuruan swasta di Majalengka yang menonjolkan pembelajaran bidang pariwisata, perhotelan, hospitality, dan layanan. Sekolah ini menjadi pilihan bagi calon siswa yang mencari SMK terbaik di Majalengka dengan bekal keterampilan praktis dan pembinaan karakter.",
   history:
     "Sekolah hadir untuk membuka akses pendidikan kejuruan yang relevan dengan kebutuhan industri hospitality, pariwisata, layanan, dan kewirausahaan di Majalengka serta wilayah sekitarnya.",
   principal:
@@ -257,7 +247,7 @@ export const posts = [
     category: "PPDB",
     date: "30 April 2026",
     excerpt:
-      "Informasi pendaftaran siswa baru, konsultasi jurusan, dan alur kontak admin PPDB sekolah.",
+      "Informasi pendaftaran siswa baru, konsultasi jurusan, dan alur PPDB sekolah.",
     image: imageLibrary.students,
   },
   {
@@ -296,9 +286,9 @@ export const ppdb = {
   ],
   flow: [
     "Isi form minat PPDB di website",
-    "Admin menerima data calon siswa",
-    "Calon siswa diarahkan ke WhatsApp admin",
-    "Admin melakukan follow up dan verifikasi berkas",
+    "Data otomatis disusun menjadi pesan WhatsApp",
+    "Calon siswa mengirim pesan ke sekolah",
+    "Pihak sekolah memberi arahan dan verifikasi berkas",
     "Calon siswa menyelesaikan daftar ulang",
   ],
 };
@@ -307,30 +297,16 @@ export const faqs = [
   {
     question: "Apakah sekolah menerima konsultasi jurusan lewat WhatsApp?",
     answer:
-      "Ya. Calon siswa dan orang tua dapat menghubungi admin PPDB melalui tombol WhatsApp di website.",
+      "Ya. Calon siswa dan orang tua dapat menghubungi sekolah melalui tombol WhatsApp di website.",
   },
   {
-    question: "Apakah data biaya pendaftaran sudah final?",
+    question: "Bagaimana cara mengetahui biaya pendaftaran terbaru?",
     answer:
-      "Data biaya perlu diverifikasi oleh pihak sekolah sebelum ditampilkan sebagai informasi resmi.",
+      "Calon siswa dan orang tua dapat menanyakan informasi biaya terbaru melalui WhatsApp atau datang langsung ke sekolah.",
   },
   {
     question: "Apakah form PPDB langsung mendaftarkan siswa?",
     answer:
-      "Form ini berfungsi sebagai form minat. Admin akan menghubungi calon siswa untuk proses pendaftaran berikutnya.",
+      "Form ini membantu menyusun data minat PPDB ke WhatsApp. Pendaftaran resmi tetap mengikuti arahan dan verifikasi dari pihak sekolah.",
   },
-];
-
-export const adminFeatures = [
-  { title: "Leads PPDB", icon: Users },
-  { title: "Galeri", icon: Camera },
-  { title: "Berita & Prestasi", icon: Award },
-  { title: "Profil Sekolah", icon: Building2 },
-  { title: "Pengaturan Kontak", icon: Phone },
-  { title: "Jadwal PPDB", icon: CalendarCheck },
-  { title: "Jurusan", icon: GraduationCap },
-  { title: "Fasilitas", icon: BedDouble },
-  { title: "Mitra", icon: Handshake },
-  { title: "Kegiatan", icon: Utensils },
-  { title: "Prestasi", icon: Star },
 ];

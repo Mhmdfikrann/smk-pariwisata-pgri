@@ -22,12 +22,14 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     default:
-      "SMK Pariwisata PGRI Majalengka | Sekolah Pariwisata & Perhotelan",
+      "SMK Terbaik di Majalengka | SMK Pariwisata PGRI Majalengka",
     template: "%s | SMK Pariwisata PGRI Majalengka",
   },
   description:
-    "Website resmi SMK Pariwisata PGRI Majalengka. Informasi profil sekolah, jurusan, fasilitas, kegiatan, prestasi, dan PPDB terbaru.",
+    "SMK Pariwisata PGRI Majalengka adalah pilihan SMK terbaik di Majalengka untuk jurusan pariwisata, perhotelan, hospitality, dan PPDB siswa baru.",
   keywords: [
+    "SMK terbaik di Majalengka",
+    "SMK terbaik Majalengka",
     "SMK Pariwisata Majalengka",
     "SMK Pariwisata PGRI Majalengka",
     "SMK PGRI Majalengka",
@@ -35,9 +37,9 @@ export const metadata: Metadata = {
     "PPDB SMK Majalengka",
   ],
   openGraph: {
-    title: "SMK Pariwisata PGRI Majalengka",
+    title: "SMK Terbaik di Majalengka - SMK Pariwisata PGRI Majalengka",
     description:
-      "Profil sekolah, jurusan perhotelan dan pariwisata, fasilitas, kegiatan, prestasi, dan PPDB.",
+      "Profil sekolah, jurusan perhotelan dan pariwisata, fasilitas, kegiatan, prestasi, dan PPDB untuk calon siswa Majalengka.",
     url: siteUrl,
     siteName: school.publicName,
     locale: "id_ID",

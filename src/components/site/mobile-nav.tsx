@@ -32,6 +32,7 @@ export function MobileNav() {
           {navItems.map((item) => (
             <SheetClose
               key={item.href}
+              nativeButton={false}
               render={
                 <Link
                   href={item.href}
@@ -45,7 +46,11 @@ export function MobileNav() {
         </nav>
         <Separator />
         <div className="px-4">
-          <Button className="w-full" render={<a href={whatsappUrl(defaultWhatsappMessage)} />}>
+          <Button
+            className="w-full"
+            nativeButton={false}
+            render={<a href={whatsappUrl(defaultWhatsappMessage)} />}
+          >
             Tanya PPDB
           </Button>
         </div>

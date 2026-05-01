@@ -11,8 +11,8 @@ export function SiteFooter() {
         <div>
           <p className="text-lg font-semibold">{school.publicName}</p>
           <p className="mt-3 max-w-xl text-sm leading-6 text-muted-foreground">
-            Website profil sekolah dan media informasi PPDB untuk calon siswa,
-            orang tua, alumni, dan mitra sekolah.
+            Informasi sekolah, jurusan, kegiatan, fasilitas, dan PPDB untuk
+            calon siswa, orang tua, alumni, dan mitra sekolah.
           </p>
           <div className="mt-5 space-y-2 text-sm text-muted-foreground">
             <p className="flex gap-2">
@@ -55,16 +55,13 @@ export function SiteFooter() {
                 {item.label}
               </Link>
             ))}
-            <Link href="/admin/login" className="text-muted-foreground hover:text-primary">
-              Admin
-            </Link>
           </div>
         </div>
       </div>
       <Separator />
       <div className="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-5 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
         <span>Copyright 2026 {school.publicName}. All rights reserved.</span>
-        <span>Data publik perlu diverifikasi oleh pihak sekolah sebelum publikasi final.</span>
+        <span>SMK pariwisata dan perhotelan di Majalengka.</span>
       </div>
     </footer>
   );

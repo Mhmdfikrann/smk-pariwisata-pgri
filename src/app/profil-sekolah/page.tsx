@@ -18,14 +18,13 @@ export const metadata: Metadata = {
 export default function ProfilSekolahPage() {
   const identities = [
     ["Nama resmi", school.officialName],
-    ["Branding publik", school.publicName],
+    ["Nama sekolah", school.publicName],
     ["NPSN", school.npsn],
     ["Status", school.status],
     ["Bentuk pendidikan", school.educationType],
     ["Akreditasi", school.accreditation],
     ["Telepon", school.phone],
     ["Email", `${school.email} / ${school.alternateEmail}`],
-    ["Website/blog", school.blog],
   ];
 
   return (
@@ -91,7 +90,7 @@ export default function ProfilSekolahPage() {
         <SectionHeading
           eyebrow="Identitas"
           title="Data sekolah"
-          description="Data berikut bersumber dari riset publik dan perlu diverifikasi sebelum publikasi final."
+          description="Informasi identitas sekolah untuk membantu calon siswa dan orang tua mengenal SMK Pariwisata PGRI Majalengka."
         />
         <Card className="mt-8 rounded-lg">
           <CardContent className="pt-4">
